@@ -1,16 +1,29 @@
-## Hi there 👋
+MMR
+Senior C++ Software Engineer
 
-<!--
-**mmr-cpp/mmr-cpp** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Modern C++ | Multithreading | Networking | System Design
 
-Here are some ideas to get you started:
+About Me
+────────
+• 6+ years of C++ development
+• C++11/14/17
+• Multithreading & concurrency
+• TCP/IP & socket programming
+• Linux
+• Design patterns & SOLID
+• High-performance software
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Featured Projects
+──────────────────
+🚀 Concurrent Task Executor
+🌐 High Performance TCP Server
+💳 Payment Gateway Simulator
+⚡ High Performance Cache
+🏗️ C++ Design Patterns
+☁️ C++ Microservices
+
+Tech Stack
+──────────
+C++ | C | Python | Linux | CMake | Git | Docker
+
+Projects | Resume | LinkedIn
