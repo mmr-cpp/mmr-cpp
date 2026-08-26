@@ -1,0 +1,47 @@
+# Build
+build/
+cmake-build-*/
+out/
+bin/
+obj/
+
+# C/C++ binaries
+*.exe
+*.dll
+*.so
+*.a
+*.o
+*.obj
+*.lib
+
+# Debug/IDE
+.vscode/
+.idea/
+*.user
+*.suo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Environment / secrets
+.env
+.env.*
+*.pem
+*.key
+
+# Archives / generated files
+*.zip
+*.7z
+*.rar
+
+# Core dumps
+core
+core.*
