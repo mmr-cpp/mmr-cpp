@@ -1,0 +1,417 @@
+
+
+---
+
+# The B₀ and B₁ Magnetic Fields
+
+# The Static Field (B₀)
+
+For cylindrical MRI systems, the static field is created using a superconducting magnet.
+The static field must be:
+
+### Strong
+
+Typical field strengths:
+- 1.5 T (15,000 G)
+- 3 T (30,000 G)
+
+### Stable
+
+- The field is always on.
+- High stability over time.
+
+### Spatially Homogeneous
+- Nearly identical strength throughout the imaging volume.
+- Uniformity within a few parts per million.
+
+For cylindrical MRI systems:
+B₀ = B₀ k̂
+
+Meaning the field points in the **+z direction**.
+
+---
+
+## Reverse-Ramped Systems
+
+In reverse-ramped systems:
+B₀ = −B₀ k̂
+
+The magnetic field points opposite to **+z**.
+
+---
+
+# Effects of B₀ on Nuclear Spins
+- When an object containing nuclear spins is placed in the static magnetic field:
+	-Effect 1: Alignment
+		- Spins tend to align with the magnetic field.
+	- Effect 2: Resonance
+		- Spins rotate around the magnetic field direction at a well-defined frequency.
+		- This rotational motion is known as **precession**.
+
+---
+
+## Net Magnetization / Alignment
+
+When spins are placed in a strong magnetic field:
+- Some align parallel to the field.
+- Some align antiparallel to the field.
+
+The two states have different energies.
+
+Because the lower-energy state is slightly favored:
+- More spins occupy the lower-energy state.
+- A measurable net magnetization develops.
+
+This net magnetization vector is denoted by:**M**
+
+---
+
+### Net Magnetization Equation
+
+M = Σ mᵢ   (i = 1 to N)
+where:
+- **M** = net magnetization vector
+- **mᵢ** = magnetic moment of the *i*th spin
+- **N** = total number of spins in the object
+
+---
+
+### Magnetization Illustration
+
+```text
+Without B₀:
+
+↑  ↓  ←  →  ↗  ↙  ↘  ↖
+Random orientations
+
+Net M = 0
+
+
+With B₀:
+
+↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑
+↑ ↑ ↑ ↑ ↑ ↑ ↑
+↓ ↓ ↓
+
+Majority aligned
+
+Net M ↑
+```
+
+---
+## Precession
+
+The second major effect that occurs when nuclear spins are placed in a static magnetic field (**B₀**) is **precession**.
+
+## What is Precession?
+
+A spin with magnetic moment **μ** placed in the magnetic field **B₀** experiences a torque.
+
+This torque causes the magnetic moment to rotate around the direction of the static field rather than align with it instantly.
+
+The rotational motion around **B₀** is called **precession**.
+
+---
+
+### Larmor Frequency
+
+The precession occurs at a specific frequency called the **Larmor frequency**.
+
+Larmor Frequency:
+
+ω₀ = γB₀
+
+where:
+- **ω₀** = Larmor angular frequency
+- **γ** = gyromagnetic ratio
+- **B₀** = static magnetic field strength
+
+The gyromagnetic ratio depends on the type of nucleus.
+
+For hydrogen (¹H):
+
+γ = 42.57638507 MHz/T
+
+---
+
+### Physical Interpretation
+
+When a collection of spins is placed in the static magnetic field:
+
+- The spins acquire a net magnetization **M**.
+- A torque acts on the magnetic moments.
+- The magnetic moments rotate around the direction of **B₀**.
+- The tip of the magnetization vector traces out a circular path.
+
+This circular motion is the origin of the MR signal.
+
+---
+
+### Precession Diagram
+
+```text
+                 +z (B₀)
+
+                    ↑
+                    │
+                    │
+                    │
+                 M  ↺
+                /|
+               / |
+              /  |
+             /   |
+            O----┘
+
+O = Isocenter
+
+M rotates around B₀ at the Larmor frequency.
+```
+
+---
+
+### Gyromagnetic Ratios of Common MR Nuclei
+
+| Nucleus | Gyromagnetic Ratio (MHz/T) |
+|----------|---------------------------|
+| ¹H | 42.576 |
+| ¹³C | 10.705 |
+| ¹⁹F | 40.054 |
+| ²³Na | 11.262 |
+| ³¹P | 17.235 |
+
+---
+
+## Direction of Precession
+
+The direction of precession depends on the direction of the static magnetic field **B₀**.
+
+### Forward-Ramped System
+
+When **B₀** points toward the observer:
+
+```text
+      Viewer
+
+         ●
+        ↻
+
+Clockwise Rotation
+```
+
+The magnetization vector **M** precesses in a **clockwise (CW)** direction.
+
+---
+
+### Reverse-Ramped System
+
+When **B₀** points away from the observer:
+
+```text
+      Viewer
+
+         ●
+        ↺
+
+Counterclockwise Rotation
+```
+
+The magnetization vector **M** precesses in a **counterclockwise (CCW)** direction.
+
+---
+
+# The RF Field (B₁)
+
+While the static magnetic field **B₀** aligns spins and causes them to precess, MRI requires a second magnetic field, called **B₁**, to produce a detectable signal.
+
+## Purpose of B₁
+
+The net magnetization vector **M** naturally aligns with **B₀**.
+
+A magnetization vector perfectly aligned with B₀ does not produce a measurable MR signal.
+
+To generate a signal, **M** must be tipped away from the longitudinal direction and into the transverse plane.
+
+This is accomplished using the **B₁ field**.
+
+---
+
+## What is B₁?
+
+B₁ is a magnetic field that:
+
+- Is perpendicular to B₀.
+- Rotates at the same Larmor frequency as the spins.
+- Is much weaker than B₀.
+- Is generated by an RF transmit coil.
+
+Because its frequency lies in the radio-frequency range, B₁ is often called the **RF field**.
+
+---
+
+## Interaction of B₀ and B₁
+
+Two magnetic fields act on the magnetization vector:
+
+- **B₀** (static field)
+- **B₁** (rotating RF field)
+
+```text
+                    +z (B₀)
+
+                       ↑
+                       │
+                       │
+                       │
+                       │
+                       O────→ B₁
+
+B₀ aligns M along z.
+B₁ tips M away from z.
+```
+
+The static field causes precession around the z-axis.
+
+The RF field causes the magnetization vector to rotate away from the z-axis.
+
+As a result, the angle between **M** and **B₀** changes.
+
+---
+
+## Tipping the Magnetization
+
+When B₁ is applied:
+
+- Magnetization begins rotating away from B₀.
+- The longitudinal component decreases.
+- A transverse component develops.
+- The transverse component precesses and induces voltage in a receiver coil.
+
+Without B₁, magnetization would remain aligned with B₀ and no MR signal could be detected.
+
+---
+
+## Excitation
+
+The tipping action of B₁ is called **excitation**.
+
+Because B₁ excites the magnetic resonance process, it is often referred to as the **excitation field**.
+
+---
+
+## Flip Angle
+
+The angle through which the magnetization is rotated is called the **flip angle (α)**.
+
+Common flip angles include:
+
+- 90°
+- 180°
+
+Examples:
+
+```text
+Before RF Pulse
+
+      M
+      ↑
+      │
+      │
+      ↑ B₀
+
+Flip Angle = 0°
+```
+
+```text
+90° RF Pulse
+
+      B₀
+       ↑
+
+O ───→ M
+
+Flip Angle = 90°
+```
+
+```text
+180° RF Pulse
+
+      B₀
+       ↑
+
+       │
+       │
+       ↓ M
+
+Flip Angle = 180°
+```
+
+---
+
+## Excitation Rate
+
+Just as precession has the Larmor frequency
+
+`ω₀ = γB₀`
+
+the tipping motion produced by B₁ has an excitation rate:
+
+`ω₁ = γB₁`
+
+where:
+
+- **ω₁** = excitation angular frequency
+- **γ** = gyromagnetic ratio
+- **B₁** = RF magnetic field strength
+
+The stronger the B₁ field, the faster the magnetization tips.
+
+---
+
+## Flip Angle Equation
+
+The flip angle is determined by the strength and duration of the RF pulse:
+
+`α = γ ∫ B₁(t) dt`
+
+For a rectangular RF pulse with constant amplitude:
+
+`α = γB₁τ`
+
+where:
+
+- **α** = flip angle
+- **γ** = gyromagnetic ratio
+- **B₁** = RF field strength
+- **τ** = pulse duration
+
+This relationship is the basis for calculating RF pulse amplitudes in MRI systems.
+
+---
+
+## Relative Strength of B₀ and B₁
+
+The B₁ field is much weaker than the static field.
+
+Typical values:
+
+- B₀ = 1.5 T = 15,000 G
+- Strong B₁ ≈ 0.15 G (≈ 15 μT)
+
+Thus B₁ is approximately five orders of magnitude weaker than B₀.
+
+Even though B₁ is much weaker, it is highly effective because it rotates at the same Larmor frequency as the spins.
+
+---
+
+## Signal Generation
+
+The complete process is:
+
+1. B₀ aligns spins.
+2. Spins precess at the Larmor frequency.
+3. B₁ tips magnetization away from B₀.
+4. A transverse magnetization is created.
+5. The transverse magnetization precesses.
+6. The rotating magnetization induces voltage in a receiver coil.
+7. The induced voltage becomes the MRI signal.
